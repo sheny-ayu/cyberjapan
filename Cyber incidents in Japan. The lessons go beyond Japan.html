@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cyber incidents in Japan. The lessons go beyond Japan.</title>
+<style>
+:root{--bg:#f6f7f4;--card:#fff;--ink:#1d2a22;--muted:#5a665e;--line:#dde3dc;--green:#2f4a3a;--accent:#e6ecd0;--warn:#fbf3dc;--do:#e8f0ea;--lime:#d9e68a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141a16;--card:#1c241f;--ink:#e9eee9;--muted:#a3afa6;--line:#2c382f;--green:#0f1e15;--accent:#4a5a2a;--warn:#2d2a18;--do:#1d2c22;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141a16;--card:#1c241f;--ink:#e9eee9;--muted:#a3afa6;--line:#2c382f;--green:#0f1e15;--accent:#4a5a2a;--warn:#2d2a18;--do:#1d2c22;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 48px}
+.hero{background:var(--green);color:#fff;border-radius:16px;padding:32px 24px}
+.meta{font-size:13px;opacity:.8;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.for{border-left:3px solid var(--lime);padding-left:12px;margin:0 0 20px;font-size:15px}
+.for b{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.75}
+.hero h1{margin:0 0 12px;font:700 clamp(28px,6vw,42px)/1.15 Georgia,"Times New Roman",serif}
+.hero h1 em{font-style:normal;color:var(--lime)}
+.hero p{margin:0 0 20px;max-width:560px;opacity:.9}
+.cta{display:inline-block;background:var(--lime);color:#1d2a22;text-decoration:none;font-weight:600;border-radius:999px;padding:10px 20px}
+h2{font:600 20px/1.3 Georgia,serif;margin:36px 0 6px}
+.sub{color:var(--muted);margin:0 0 16px}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.bar button{font:inherit;font-size:14px;background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:6px 14px;cursor:pointer}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:12px;overflow:hidden}
+summary{list-style:none;cursor:pointer;padding:16px 18px;display:flex;gap:14px;align-items:center}
+summary::-webkit-details-marker{display:none}
+.num{flex:none;min-width:34px;height:34px;padding:0 8px;border-radius:17px;background:var(--accent);display:grid;place-items:center;font-weight:700;font-size:14px}
+.t{flex:1}
+.t b{display:block;font-size:17px}
+.t span{color:var(--muted);font-size:15px}
+summary::after{content:"+";font-size:24px;color:var(--muted);line-height:1}
+details[open] summary::after{content:"–"}
+summary:focus-visible{outline:2px solid var(--ink);outline-offset:-2px}
+.body{padding:0 18px 18px;border-top:1px solid var(--line)}
+.body p{margin:14px 0 0}
+.dates{margin-top:14px;padding:10px 14px;border-radius:10px;background:var(--do);font-size:15px}
+.ask{margin:14px 0 0;font-size:12px;letter-spacing:.08em;font-weight:700;color:var(--muted)}
+.body ul{margin:6px 0 0;padding-left:20px}
+.key{margin:14px 0 0;padding:10px 14px;border-left:4px solid var(--accent);background:var(--warn);border-radius:4px;font-weight:600}
+.dark{background:var(--green);color:#fff;border-radius:12px;padding:20px;margin:14px 0 0}
+.dark p{margin:10px 0 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.card b{display:block;margin-bottom:2px}
+.card span{color:var(--muted);font-size:15px}
+.quote{border-left:4px solid var(--ink);padding:4px 14px;margin:24px 0 0;font-size:17px}
+sup{font-size:.7em}
+ol.refs{padding-left:20px;color:var(--muted);font-size:15px}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+<header class="hero">
+<div class="meta"><span>Cyber Readiness · APAC · Service &amp; vendor stakeholders</span><span>Approx. 3-minute read · Incident window: late September – 11 October 2026</span></div>
+<div class="for"><b>Who this is for</b>Colleagues involved in service development, planning and third-party vendor management.</div>
+<h1>Cyber incidents in Japan.<br><em>The lessons go beyond Japan.</em></h1>
+<p>Recent incidents show how weaknesses in applications, access controls and third-party services can create significant business impact.</p>
+<a class="cta" href="#act">Turn incidents into action ↓</a>
+</header>
+
+<div class="bar" style="margin-top:36px">
+<h2 style="margin:0">What happened</h2>
+<button type="button" id="toggle">Expand all</button>
+</div>
+<p class="sub" style="margin-top:6px">Four recent incidents. Select one for the details.</p>
+
+<details class="item">
+<summary><span class="num">14.64M</span><span class="t"><b>skyticket records exposed</b><span>Travel booking platform</span></span></summary>
+<div class="body">
+<p>Unauthorised use of a management function enabled access to other servers and cloud-held data. Customer information was exposed.<sup>[9]</sup></p>
+<div class="dates">Intrusion: 2–4 Oct · Detected: 5 Oct · Disclosed: 9 Oct</div>
+</div>
+</details>
+
+<details class="item">
+<summary><span class="num">10.79M</span><span class="t"><b>Monogatari Corporation records exposed</b><span>Restaurant operator</span></span></summary>
+<div class="body">
+<p>Customer information from the Yakiniku King restaurant app was exposed.<sup>[1]</sup></p>
+<div class="dates">Detected: 2 Oct → Disclosed: 5 Oct</div>
+</div>
+</details>
+
+<details class="item">
+<summary><span class="num">Web</span><span class="t"><b>A web-function flaw at DIP Corporation</b><span>Recruitment services</span></span></summary>
+<div class="body">
+<p>A flaw affecting Baitoru and related services was exploited. Some email addresses were confirmed exposed.<sup>[2]</sup></p>
+<div class="dates">Detected / user notice: 6 Oct → Corporate disclosure: 9 Oct</div>
+</div>
+</details>
+
+<details class="item">
+<summary><span class="num">495</span><span class="t"><b>IDC Frontier: 495 organisations affected</b><span>Enterprise cloud provider</span></span></summary>
+<div class="body">
+<p>A ransomware attack disrupted part of its cloud service, affecting businesses and local authorities.<sup>[3]</sup></p>
+<div class="dates">Incident: 7 Oct → Second update: same day</div>
+</div>
+</details>
+
+<h2>Japan and wider regional context</h2>
+<p class="sub">The impact is not confined to Japan.</p>
+
+<details class="item">
+<summary><span class="t"><b>Incidents span multiple regions</b><span>Japan, South Korea, Denmark, Bangladesh and Nepal</span></span></summary>
+<div class="body">
+<p>Incidents are being reported across industries in Japan, prompting the Information-technology Promotion Agency (IPA) to call for prompt security checks.<sup>[4]</sup> But the impact is not confined to Japan.</p>
+<p>Data theft and operational disruption have also been reported across South Korea, Denmark, Bangladesh and Nepal. These incidents span multiple regions worldwide.<sup>[5][6][7]</sup></p>
+</div>
+</details>
+
+<details class="item">
+<summary><span class="t"><b>AI misuse is also being reported</b><span>The fundamentals stay the same</span></span></summary>
+<div class="body">
+<p>CrowdStrike reported the use of AI agents and other tools in attacks targeting South Korean financial institutions.<sup>[5]</sup> The UK’s National Cyber Security Centre also assesses that AI will increase the efficiency of cyber operations.<sup>[8]</sup></p>
+<div class="key">Regardless of whether AI is involved, the fundamentals remain the same: reduce exposure, strengthen access controls and be ready to respond.</div>
+</div>
+</details>
+
+<div class="quote">Cyber incidents across multiple regions highlight risks in both our own systems and external dependencies. <b>The key question is: what can we learn and strengthen now?</b></div>
+
+<h2 id="act">Four lessons to act on</h2>
+<p class="sub">Each one comes with questions to ask your own team.</p>
+
+<details class="item">
+<summary><span class="num">01</span><span class="t"><b>Reduce opportunities for intrusion</b><span>Internet-facing assets</span></span></summary>
+<div class="body">
+<p>skyticket reported that misuse of a management function enabled access to other servers and cloud-held data.<sup>[9]</sup> DIP’s incident involved a flaw in a website function.<sup>[2]</sup> Checks must go beyond patching to include application functionality and configuration.</p>
+<p class="ask">ASK YOURSELF</p>
+<ul>
+<li>Do we know all internet-facing websites, APIs and legacy functions?</li>
+<li>Are vulnerabilities, configurations and access controls regularly tested?</li>
+<li>Have unnecessary exposures been removed?</li>
+</ul>
+<div class="key">Check the full exposed estate, not just the main systems.</div>
+</div>
+</details>
+
+<details class="item">
+<summary><span class="num">02</span><span class="t"><b>Limit the impact of compromised access</b><span>Access control</span></span></summary>
+<div class="body">
+<p>In Denmark’s CPR incident, a company’s legitimate lookup access was abused.<sup>[6]</sup> Alongside protecting entry points, design access so compromised permissions cannot expose more information than necessary.</p>
+<p class="ask">ASK YOURSELF</p>
+<ul>
+<li>Have we removed unnecessary accounts and permissions, and limited access to required data?</li>
+<li>Can we detect bulk extraction and revoke sessions and integration keys?</li>
+</ul>
+<div class="key">Successful login does not mean safe access.</div>
+</div>
+</details>
+
+<details class="item">
+<summary><span class="num">03</span><span class="t"><b>Know where our dependencies create exposure</b><span>Third-party risk</span></span></summary>
+<div class="body">
+<p>IDC Frontier’s attack affected many customers.<sup>[3]</sup> The disclosure alone does not establish a failure in vendor assessment, but it illustrates how an incident at a dependency can affect our operations.</p>
+<p class="ask">ASK YOURSELF</p>
+<ul>
+<li>Do we know what data and access our providers hold?</li>
+<li>Are security controls verified with evidence?</li>
+<li>Are incident notification, emergency contacts and responsibilities clear?</li>
+<li>Have we tested contingency and recovery arrangements together?</li>
+</ul>
+<div class="key">Verify both routine assurance and the ability to respond together.</div>
+</div>
+</details>
+
+<details class="item">
+<summary><span class="num">04</span><span class="t"><b>Be ready before an incident happens</b><span>Incident response</span></span></summary>
+<div class="body">
+<div class="dark">
+<p style="margin-top:0">A provider reports suspected unauthorised access, but the full impact is still unknown.</p>
+<p><b>Who receives the report? Who decides whether to restrict or stop the service? Who acts if the decision-maker is unavailable?</b></p>
+<p>Do not wait for perfect information. Follow the established reporting process and be ready to investigate, contain and make decisions in parallel.</p>
+</div>
+</div>
+</details>
+
+<h2>Takeaway: controls must work in practice</h2>
+<p class="sub">For us and our providers, having controls in place is only the starting point.</p>
+<div class="grid">
+<div class="card"><b>Verify</b><span>Test key controls and retain evidence that they work.</span></div>
+<div class="card"><b>Close gaps</b><span>Assign clear owners and deadlines to unresolved issues.</span></div>
+<div class="card"><b>Learn and act</b><span>Turn lessons from other organisations’ incidents into action before they become our own.</span></div>
+</div>
+
+<details style="margin-top:32px">
+<summary><span class="t"><b>View detailed incident reference table</b></span></summary>
+<div class="body">
+<ol class="refs">
+<li>Monogatari Corporation: disclosure, 5 October 2026</li>
+<li>DIP Corporation: disclosure, 9 October 2026</li>
+<li>IDC Frontier: second update, 7 October 2026</li>
+<li>IPA: security alert, 9 October 2026</li>
+<li>Reuters: South Korean bank attacks and AI analysis, 8 October 2026</li>
+<li>Danish government: CPR disclosure, 5 October 2026</li>
+<li>The Daily Star: Pathao update, 9 October 2026</li>
+<li>UK NCSC: AI cyber-threat assessment through 2027</li>
+<li>skyticket: official disclosure, 9 October 2026 (2–4 October server intrusion)</li>
+</ol>
+</div>
+</details>
+
+</main>
+<script>
+(function(){
+var btn=document.getElementById('toggle');
+var items=document.querySelectorAll('details.item');
+var all=false;
+btn.addEventListener('click',function(){
+all=!all;
+items.forEach(function(d){d.open=all;});
+btn.textContent=all?'Collapse all':'Expand all';
+});
+})();
+</script>
+</body>
+</html>

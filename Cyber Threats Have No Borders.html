@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cyber Threats Have No Borders.</title>
+<style>
+:root{--bg:#f6f7f4;--card:#fff;--ink:#1d2a22;--muted:#5a665e;--line:#dde3dc;--green:#2f4a3a;--accent:#e6ecd0;--warn:#fbf3dc;--do:#e8f0ea;--lime:#d9e68a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141a16;--card:#1c241f;--ink:#e9eee9;--muted:#a3afa6;--line:#2c382f;--green:#0f1e15;--accent:#4a5a2a;--warn:#2d2a18;--do:#1d2c22;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141a16;--card:#1c241f;--ink:#e9eee9;--muted:#a3afa6;--line:#2c382f;--green:#0f1e15;--accent:#4a5a2a;--warn:#2d2a18;--do:#1d2c22;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:20px 16px 48px}
+.hero{background:var(--green);color:#fff;border-radius:16px;padding:32px 24px;text-align:center}
+.eyebrow{font-size:12px;letter-spacing:.1em;text-transform:uppercase;opacity:.8;margin:0 0 14px}
+.hero h1{margin:0 0 12px;font:700 clamp(30px,7vw,46px)/1.1 Georgia,"Times New Roman",serif}
+.hero p{margin:0 auto;max-width:560px;opacity:.92}
+h2{font:600 22px/1.3 Georgia,serif;margin:36px 0 6px}
+.tag{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:36px 0 0;font-weight:700}
+.tag+h2{margin-top:4px}
+.sub{color:var(--muted);margin:0 0 16px}
+.note{border-left:4px solid var(--accent);background:var(--warn);border-radius:4px;padding:10px 14px;font-size:15px;margin:16px 0}
+.sign{margin:0;font-weight:600}.sign span{display:block;font-weight:400;color:var(--muted);font-size:15px}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.bar button{font:inherit;font-size:14px;background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:6px 14px;cursor:pointer}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:12px;overflow:hidden}
+summary{list-style:none;cursor:pointer;padding:16px 18px;display:flex;gap:14px;align-items:center}
+summary::-webkit-details-marker{display:none}
+.num{flex:none;min-width:68px;height:34px;padding:0 10px;border-radius:17px;background:var(--accent);display:grid;place-items:center;font-weight:700;font-size:14px;white-space:nowrap}
+.t{flex:1}
+.t b{display:block;font-size:17px}
+.t span{color:var(--muted);font-size:15px}
+summary::after{content:"+";font-size:24px;color:var(--muted);line-height:1}
+details[open] summary::after{content:"–"}
+summary:focus-visible{outline:2px solid var(--ink);outline-offset:-2px}
+.body{padding:0 18px 18px;border-top:1px solid var(--line)}
+.body p{margin:14px 0 0}
+.tablewrap{overflow-x:auto;margin-top:14px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:15px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+td:first-child{font-weight:700}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0 0}
+.flow span{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 14px;font-weight:600;font-size:15px}
+.flow i{font-style:normal;color:var(--muted)}
+.lines{font-size:19px;font-weight:600;margin:6px 0 16px}
+.close{background:var(--green);color:#fff;border-radius:16px;padding:32px 24px;text-align:center;margin-top:36px}
+.close .big{font:800 clamp(34px,8vw,56px)/1 system-ui,sans-serif;letter-spacing:.02em;margin:10px 0}
+.close .big u{text-decoration:none;border-bottom:4px solid var(--lime)}
+.close h3{margin:0 0 14px;letter-spacing:.06em}
+.close p{max-width:620px;margin:0 auto 18px;opacity:.92}
+.pills{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.pills span{border:1px solid rgba(255,255,255,.6);border-radius:999px;padding:6px 16px;font-weight:700;font-size:14px}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+<header class="hero">
+<p class="eyebrow">CyberSMART Month 2026 · Leadership insight</p>
+<h1>Cyber Threats Have No Borders.</h1>
+<p>One email, one call or one request identified in one jurisdiction may use the same approach to reach people elsewhere across APAC.</p>
+</header>
+
+<h2>Cyber threats are becoming more convincing, more personal and more connected.</h2>
+<p>Across APAC, public reporting points to scams, phishing, impersonation, ransomware and the exploitation of vulnerabilities. Case volumes are not rising uniformly in every jurisdiction. However, selected attack types, losses and AI-enabled impersonation show that the nature of the threat is changing. These trends are not unique to any single country, industry or organization, and remind us that no organization can assume it is immune.</p>
+<div class="note"><b>Important data note:</b> The figures on this page are not SMBC incident data. Definitions, populations, periods and reporting methods differ, so the figures must not be used for direct country-to-country comparison.</div>
+<p class="sign">Satoru Suzuki<span>Head of Information Security, SMBC Asia Pacific</span></p>
+
+<p class="tag">Why now?</p>
+<div class="bar">
+<h2 style="margin-top:4px">Look beyond headline totals to growth rates, losses and changing attack methods.</h2>
+</div>
+<p class="sub">Because the threat environment is changing. Attackers are increasingly using AI to produce convincing messages, voices and identities at scale, making malicious activity harder to distinguish from legitimate business communication. The result is not only more attacks, but more persuasive attacks.</p>
+
+<div class="bar" style="margin:0 0 12px">
+<span class="sub" style="margin:0">Select a figure for the details.</span>
+<button type="button" id="toggle">Expand all</button>
+</div>
+
+<details class="item">
+<summary><span class="num">+10%</span><span class="t"><b>APAC cyberattack frequency</b><span>Check Point Research</span></span></summary>
+<div class="body"><p>Average weekly attacks per organization in 2025, year on year.</p></div>
+</details>
+<details class="item">
+<summary><span class="num">+53%</span><span class="t"><b>Social engineering incidents</b><span>Linked to AI-driven deepfakes</span></span></summary>
+<div class="body"><p>Aon-reported year-on-year increase linked to AI-driven deepfakes.</p></div>
+</details>
+<details class="item">
+<summary><span class="num">+108%</span><span class="t"><b>Hong Kong phishing incidents</b><span>HKCERT-handled incidents, 2024</span></span></summary>
+<div class="body"><p>HKCERT-handled incidents in 2024, year on year.</p></div>
+</details>
+<details class="item">
+<summary><span class="num">A$2.18B</span><span class="t"><b>Australian scam losses</b><span>Combined reported losses, 2025</span></span></summary>
+<div class="body"><p>Combined reported losses in 2025, up 7.8% year on year.</p></div>
+</details>
+
+<p class="tag">The regional picture</p>
+<h2>Different jurisdictions. Different indicators. One connected landscape.</h2>
+<p class="sub">Country and jurisdiction codes identify the geographic scope of each figure. The figures are external public data, not results from SMBC locations.</p>
+
+<details class="item">
+<summary><span class="t"><b>See the figures by jurisdiction</b><span>Thirteen indicators across APAC</span></span></summary>
+<div class="body">
+<div class="tablewrap">
+<table>
+<thead><tr><th>Code</th><th>Figure</th><th>What it measures</th><th>Source / period</th></tr></thead>
+<tbody>
+<tr><td>APAC</td><td>+30%</td><td>Cybercrime (regional figure)</td><td>INTERPOL Regional Reporting 2025/2026</td></tr>
+<tr><td>AUS</td><td>A$2.18B</td><td>Combined reported scam losses, +7.8% YoY</td><td></td></tr>
+<tr><td>HKG</td><td>HK$6.32B</td><td>Technology crime losses, +23.2% YoY</td><td></td></tr>
+<tr><td>IDN</td><td>Rp 3.2T</td><td>Nationwide online scam losses</td><td>2025</td></tr>
+<tr><td>IND</td><td>2.94M</td><td>Incidents handled by CERT-In</td><td>2025</td></tr>
+<tr><td>KOR</td><td>16,561</td><td>Phishing cases, Jan–Jul (cases +14%, losses +95%)</td><td></td></tr>
+<tr><td>MMR</td><td>US$37B</td><td>Illicit economy linked to cybercrime and organised crime</td><td>Myanmar Scam Watch Report 2025</td></tr>
+<tr><td>MYS</td><td>+87%</td><td>Online scam cases, YoY</td><td></td></tr>
+<tr><td>PHL</td><td>+423%</td><td>Phishing websites</td><td>Check Point Research 2025</td></tr>
+<tr><td>SGP</td><td>+123.6%</td><td>Government official impersonation scams</td><td>SPF Scam Brief 2025</td></tr>
+<tr><td>THA</td><td>173M</td><td>Scam calls and SMS observed by Whoscall</td><td></td></tr>
+<tr><td>TWN</td><td>72%</td><td>Of people encountered scams in the past year</td><td>GASA / Whoscall Report 2025</td></tr>
+<tr><td>VNM</td><td>VND 6T+</td><td>Online scam losses</td><td>Jan–Nov 2025</td></tr>
+</tbody>
+</table>
+</div>
+<div class="note">Definitions, populations, periods and reporting methods differ. The APAC figure is regional and should not be compared directly with country-level figures.</div>
+</div>
+</details>
+
+<p class="tag">So what?</p>
+<h2>Attacks often arrive through ordinary work.</h2>
+<p class="lines">An email. A call. An invoice. A supplier change. A system request.</p>
+
+<details class="item">
+<summary><span class="t"><b>They reach us personally</b><span>Phishing, SMS, QR codes and calls</span></span></summary>
+<div class="body"><p>Phishing, SMS, QR codes and calls reach work and home.</p></div>
+</details>
+<details class="item">
+<summary><span class="t"><b>They exploit trust</b><span>Colleagues, suppliers, authorities, IT support</span></span></summary>
+<div class="body"><p>Attackers pose as colleagues, suppliers, authorities or IT support.</p></div>
+</details>
+<details class="item">
+<summary><span class="t"><b>They exploit process</b><span>Payments, approvals, account changes, access requests</span></span></summary>
+<div class="body"><p>Payments, approvals, account changes and access requests can be abused.</p></div>
+</details>
+<details class="item">
+<summary><span class="t"><b>They exploit technology</b><span>Vulnerabilities, gaps and limited visibility</span></span></summary>
+<div class="body"><p>Vulnerabilities, configuration gaps and limited visibility create opportunity.</p></div>
+</details>
+
+<p class="tag">From local action to regional protection</p>
+<h2>Action taken in each location helps protect the company across borders.</h2>
+<div class="flow"><span>Local awareness</span><i>→</i><span>Early escalation</span><i>→</i><span>Regional visibility</span><i>→</i><span>Company-wide protection</span></div>
+
+<section class="close">
+<p class="eyebrow">Be CyberSMART</p>
+<div class="big">SEC<u>&nbsp;</u>RITY</div>
+<h3>IS INCOMPLETE WITHOUT U</h3>
+<p>Threats cross borders. When each of us thinks, verifies, protects and reports, one action in one location can help protect colleagues across APAC. Security is a shared responsibility. Every report, every verification and every challenge contributes to a stronger and more resilient SMBC across the region.</p>
+<div class="pills"><span>THINK</span><span>VERIFY</span><span>PROTECT</span><span>REPORT</span></div>
+</section>
+
+</main>
+<script>
+(function(){
+var btn=document.getElementById('toggle');
+var items=document.querySelectorAll('details.item');
+var all=false;
+btn.addEventListener('click',function(){
+all=!all;
+items.forEach(function(d){d.open=all;});
+btn.textContent=all?'Collapse all':'Expand all';
+});
+})();
+</script>
+</body>
+</html>
